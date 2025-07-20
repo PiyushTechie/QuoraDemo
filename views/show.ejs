@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post in Detail</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h2.title {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .post {
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+    }
+
+    .user {
+      font-size: 20px;
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .content {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #343a40;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 30px 20px;
+        padding: 20px;
+      }
+
+      .content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">📝 Post in Detail</h2>
+    <div class="meta">Post ID: <%= post.id %></div>
+    
+    <div class="post">
+      <div class="user">@<%= post.username %></div>
+      <div class="content"><%= post.content %></div>
+    </div>
+  </div>
+</body>
+</html>
