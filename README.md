@@ -86,8 +86,6 @@ The application comes with pre-loaded sample posts from users like:
 ## 🔮 Future Enhancements
 
 - User authentication and registration
-- Create new posts functionality
-- Edit and delete posts
 - Upvote/downvote system
 - Comments on posts
 - Search functionality
